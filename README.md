@@ -1,2 +1,21 @@
-# Machine-Problem
-Here are my basic machine problem codes from c up to python.
+# Machine Problem Collection
+
+This repository contains my machine problem solutions from my Computer Programming course. These programs are written in C and demonstrate fundamental programming concepts and problem-solving skills.
+
+## 📌 Contents
+- MP4 - Arrays, Functions, and File Handling
+- MP5 - Record Management System (CRUD + File Handling)
+
+## 🧠 Concepts Used
+- Arrays
+- Functions
+- File Handling
+- String Manipulation
+- Basic Data Management
+
+## 🚀 Highlight Project
+### Student Record Management System (MP5)
+A console-based system that allows users to:
+- Add, delete, and update student records
+- Compute averages and remarks
+- Save and retrieve data using file handling
