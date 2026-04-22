@@ -3,8 +3,8 @@
 This repository contains my machine problem solutions from my Computer Programming course. These programs are written in C and demonstrate fundamental programming concepts and problem-solving skills.
 
 ## 📌 Contents
-- MP4 - Arrays, Functions, and File Handling
-- MP5 - Record Management System (CRUD + File Handling)
+- MP1 - Basic Record System
+- MP2 - Record Management System (CRUD + File Handling)
 
 ## 🧠 Concepts Used
 - Arrays
