@@ -7,6 +7,7 @@ This repository contains my machine problem solutions from my Computer Programmi
 - MP2 - Record Management System (CRUD + File Handling)
 - MP3 - Sorted Array Implementation
 - MP4 - Sorted Array Implementation with Average Function
+- MP5 - Linked List Implementation
 
 ## 🧠 Concepts Used
 - Arrays
@@ -14,6 +15,7 @@ This repository contains my machine problem solutions from my Computer Programmi
 - File Handling
 - String Manipulation
 - Basic Data Management
+- Linked List
 
 ## 🚀 Highlight Project
 ### Student Record Management System (MP5)
