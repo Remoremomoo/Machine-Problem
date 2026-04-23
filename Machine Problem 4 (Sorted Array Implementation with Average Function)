@@ -131,8 +131,6 @@ void addRec(char n[], int x1, int x2, int x3){
         p = locatePos(ave);
 
         val++;
-        // FIX 1: loop starts at val - 1 (not val) and condition is i > p (not i >= p)
-        //        to avoid overwriting slot p before it's been copied
         for(i = val - 1; i >= p; i--){
             strcpy(name[i + 1], name[i]);
             q1[i + 1] = q1[i];
@@ -230,7 +228,6 @@ void update(char n[]){
                     system("pause");
                     break;
                 }
-                // FIX 2: removed unreachable save() + retrieve() that was after the while loop
             }
         }
     }
@@ -283,13 +280,9 @@ void retrieve(){
 
     fp = fopen("MP7REC.txt", "r");
 
-    // FIX 3: silently return if file doesn't exist yet (first run)
     if(fp == NULL){
         return;
     }
-
-    // FIX 4: removed local "int val = -1" that was shadowing the global val,
-    //         causing all retrieved records to be lost after retrieve() returned
     while(fgets(line, sizeof(line), fp)){
         if(sscanf(line, "%[^,],%d,%d,%d", nam, &score1, &score2, &score3) == 4){
             addRec(nam, score1, score2, score3);
