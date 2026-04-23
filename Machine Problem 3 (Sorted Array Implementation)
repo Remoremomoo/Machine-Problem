@@ -127,8 +127,6 @@ void addRec(char n[], int x1, int x2, int x3, float a){
     else{
         p = locatePos(a);
         val++;
-        // FIX 1: loop starts at val - 1 (not val) to avoid writing out of bounds
-        //        and condition is i > p (not i >= p) to avoid overwriting slot p prematurely
         for(i = val - 1; i >= p; i--){
             strcpy(name[i + 1], name[i]);
             q1[i + 1] = q1[i];
@@ -263,7 +261,6 @@ void save(){
     }
     else{
         for(i = 0; i <= val; i++){
-            // FIX 2: added \n after each record so fgets() can read them line by line on retrieve
             fprintf(fp, "%s,%d,%d,%d,%.2f\n", name[i], q1[i], q2[i], q3[i], average[i]);
         }
     }
@@ -279,12 +276,10 @@ void retrieve(){
 
     fp = fopen("MP6REC.txt", "r");
 
-    // FIX 3: silently return if file doesn't exist yet (first run)
     if(fp == NULL){
         return;
     }
 
-    // FIX 4: actually load each record into the array via addRec()
     while(fgets(line, sizeof(line), fp)){
         if(sscanf(line, "%[^,],%d,%d,%d,%f", nam, &score1, &score2, &score3, &ave1) == 5){
             addRec(nam, score1, score2, score3, ave1);
