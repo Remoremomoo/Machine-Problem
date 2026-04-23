@@ -5,6 +5,8 @@ This repository contains my machine problem solutions from my Computer Programmi
 ## 📌 Contents
 - MP1 - Basic Record System
 - MP2 - Record Management System (CRUD + File Handling)
+- MP3 - Sorted Array Implementation
+- MP4 - Sorted Array Implementation with Average Function
 
 ## 🧠 Concepts Used
 - Arrays
