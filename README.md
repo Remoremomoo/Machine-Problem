@@ -18,8 +18,8 @@ This repository contains my machine problem solutions from my Computer Programmi
 - Linked List
 
 ## 🚀 Highlight Project
-### Student Record Management System (MP5)
-A console-based system that allows users to:
-- Add, delete, and update student records
-- Compute averages and remarks
-- Save and retrieve data using file handling
+Machine Problem 3 & 4 (Sorted Array Implementation)
+- Console-based systems that maintain student records sorted by average in descending order, with full CRUD operations and file handling for data persistence.
+
+Machine Problem 5 (Linked List Implementation)
+- Console-based system using a singly linked list to maintain records sorted alphabetically, with full CRUD operations and file handling for data persistence.
